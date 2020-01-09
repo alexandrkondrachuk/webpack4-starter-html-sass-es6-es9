@@ -1,0 +1,23 @@
+@import "./mixins/font-face";
+
+$baseMargin: 2rem;
+$textBaseColor: #ebf1ed;
+
+@include font-face('Roboto', '../fonts/Roboto-Thin', 100, normal, ttf);
+@include font-face('Roboto', '../fonts/Roboto-Light', 200, normal, ttf);
+@include font-face('Roboto', '../fonts/Roboto-Regular', 300, normal, ttf);
+@include font-face('Roboto', '../fonts/Roboto-Medium', 400, normal, ttf);
+@include font-face('Roboto', '../fonts/Roboto-Bold', 600, normal, ttf);
+
+@include font-face('Roboto', '../fonts/Roboto-ThinItalic', 100, italic, ttf);
+@include font-face('Roboto', '../fonts/Roboto-LightItalic', 200, italic, ttf);
+@include font-face('Roboto', '../fonts/Roboto-Regular', 300, italic, ttf);
+@include font-face('Roboto', '../fonts/Roboto-MediumItalic', 400, italic, ttf);
+@include font-face('Roboto', '../fonts/Roboto-BoldItalic', 300, italic, ttf);
+
+body {
+    margin: $baseMargin;
+    font: 300 1rem 'Roboto', sans-serif;
+    color: $textBaseColor;
+    background: url(../images/1_J4DdvmVCieeBVJE4NUv_wg.png) no-repeat fixed;
+}
